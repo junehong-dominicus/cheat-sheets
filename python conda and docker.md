@@ -20,8 +20,8 @@ The most widely recommended tool for managing multiple Python versions on a sing
 ```conda create --name datasci_project python=3.10 pandas numpy matplotlib```
 ### 2. Activate the environment: 
 ```conda activate datasci_project```
-### 3. Verify installed packages: 
-```conda list```
+### 3. List all of your existing conda environments:
+```conda env list```
 ### 4. Deactivate the environment: 
 ```conda deactivate```
 
