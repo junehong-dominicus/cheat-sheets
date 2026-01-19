@@ -27,22 +27,21 @@ An extremely fast Python package installer and resolver, written in Rust.
 ```uv pip compile requirements.in -o requirements.txt```
 ### Sync environment
 ```uv pip sync requirements.txt```
-```
-# 1. Initialize a new project (creates .venv, pyproject.toml)
-uv init my-project
-cd my-project
 
-# 2. Add a dependency (adds to pyproject.toml, installs in .venv)
-uv add requests
+### 1. Initialize a new project (creates .venv, pyproject.toml)
+```uv init [my-project]```
+```cd my-project```
 
-# 3. Run a script in that environment (e.g., main.py)
-uv run python main.py
+### 2. Add a dependency (adds to pyproject.toml, installs in .venv)
+```uv add <package>```
 
-# 4. (Optional) To manually create/manage or use specific Python:
-uv venv --python 3.10 # Creates venv with Python 3.10
-source .venv/bin/activate # For Linux/macOS
-deactivate # To exit
-```
+### 3. Run a script in that environment (e.g., main.py)
+```uv run python main.py```
+
+### 4. (Optional) To manually create/manage or use specific Python:
+```uv venv --python 3.10 # Creates venv with Python 3.10```
+```source .venv/bin/activate # For Linux/macOS```
+```deactivate # To exit```
 
 ## Conda
 ### 1. Create a new environment: 
